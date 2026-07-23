@@ -2,10 +2,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ROTMod.Armor
+namespace ROTMod.Items
 {
-    [AutoloadEquip(EquipType.Head)]
-    public class ROT : ModItem
+    public class ROT_Head : ModItem
     {
         public override void SetDefaults()
         {
@@ -14,6 +13,7 @@ namespace ROTMod.Armor
             Item.defense = 32;
             Item.rare = ItemRarityID.Red;
             Item.value = Item.sellPrice(gold: 10);
+            Item.headSlot = 0;
         }
     }
 }
