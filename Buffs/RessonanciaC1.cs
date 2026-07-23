@@ -7,11 +7,8 @@ namespace ROTMod.Buffs
     {
         public override void SetStaticDefaults()
         {
-            // DisplayName e Description vêm do .hjson
-            Main.buffNoTimeDisplay[Type] = false;
-            Main.debuff[Type] = false;
-            Main.pvpBuff[Type] = false;
-            Main.buffNoSave[Type] = false;
+            DisplayName.SetDefault("Ressonância C1");
+            Description.SetDefault("Você está em sintonia com o ROT!\nNenhum custo de vida para usar suas habilidades.");
         }
     }
 }
